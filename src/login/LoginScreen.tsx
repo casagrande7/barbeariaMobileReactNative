@@ -17,6 +17,7 @@ function LoginScreen(): JSX.Element {
        <View style= {styles.container}>
         <Image style= {styles.logo}resizeMode="contain" source={require('../assets/imagens/user.png.png')}></Image>
         <View style= {styles.card}>
+            
             <Text style= {styles.title}>Login</Text>
             <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"} onChangeText={(textEmail) => setEmail(textEmail)}></TextInput>
             <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"#151413"} onChangeText={(textpassword) => setPassword(textpassword)} secureTextEntry></TextInput>
@@ -31,6 +32,7 @@ function LoginScreen(): JSX.Element {
             </TouchableOpacity>
         </View>
        </View>
+       
     );
 }
 
