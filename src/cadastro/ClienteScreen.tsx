@@ -63,6 +63,17 @@ function ClienteScreen(): JSX.Element {
                     <TouchableOpacity style={styles.button}>
                         <Text style={styles.buttonText} onPress={() => { CadastroClientes() }}>Cadastrar</Text>
                     </TouchableOpacity>
+                    <View style={styles.socialIconsContainer}>
+                        <TouchableOpacity>
+                            <Image style={styles.socialIcon} resizeMode="contain" source={require('../assets/imagens/google.png.png')}></Image>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Image style={styles.socialIcon} resizeMode="contain" source={require('../assets/imagens/instagram.png.png')} ></Image>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Image style={styles.socialIcon} resizeMode="contain" source={require('../assets/imagens/facebook.png.png')} ></Image>
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </View>
         </ScrollView>
@@ -106,34 +117,43 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         textAlign: 'center'
     },
-    input:{
-      backgroundColor:'#D7D4D1',
-      height :40 ,
-      marginBottom :20 ,
-      paddingHorizontal :10 ,
-      borderRadius :8 ,
-      borderWidth :1 ,
-      borderColor :'#1e90ff'
-      
-     },
-     button:{
-       backgroundColor:'#4d663a',
-       height :40 ,
-       borderRadius :15 ,
-       marginBottom :20 ,
-       justifyContent :'center'
-     },
-     buttonText:{
-       color :'#FFFFFF',
-       textAlign :'center',
-       fontSize :16 ,
-       lineHeight :40
-     },
-     forgotPassword:{
-       color :'#1e90ff',
-       textAlign :'center',
-       marginTop :10
-     }
+    input: {
+        backgroundColor: '#D7D4D1',
+        height: 40,
+        marginBottom: 20,
+        paddingHorizontal: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#1e90ff'
+
+    },
+    button: {
+        backgroundColor: '#4d663a',
+        height: 40,
+        borderRadius: 15,
+        marginBottom: 20,
+        justifyContent: 'center'
+    },
+    buttonText: {
+        color: '#FFFFFF',
+        textAlign: 'center',
+        fontSize: 16,
+        lineHeight: 40
+    },
+    forgotPassword: {
+        color: '#1e90ff',
+        textAlign: 'center',
+        marginTop: 10
+    },
+    socialIconsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginTop: 10
+    },
+    socialIcon: {
+        width: 30,
+        height: 30
+    }
 });
 
 export default ClienteScreen;
