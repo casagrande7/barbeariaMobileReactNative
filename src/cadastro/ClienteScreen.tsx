@@ -39,7 +39,7 @@ function ClienteScreen(): JSX.Element {
     }
 
     return (
-        <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <ScrollView contentContainerStyle={styles.scrollContainer} style={{width: 'auto'}}>
             <View style={styles.container}>
                 <View style={styles.card}>
                     <Image style={styles.logo} resizeMode="contain" source={require('../assets/imagens/user.png.png')}></Image>
@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
     card: {
         backgroundColor: '#D2B48C',
         width: 300,
+        borderTopRightRadius: 40, 
         borderRadius: 20,
         padding: 20,
         elevation: 3,
