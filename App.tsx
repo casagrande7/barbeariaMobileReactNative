@@ -1,11 +1,12 @@
 import React from "react";
-import LoginScreen from "./src/login/LoginClientesScreen";
 import LoginClientesScreen from "./src/login/LoginClientesScreen";
+import ClienteScreen from "./src/cadastro/ClienteScreen";
 
 function App(): JSX.Element {
   return (
     
-    <LoginClientesScreen/>
+    //<LoginClientesScreen/>
+    <ClienteScreen/>
 
   );
 
